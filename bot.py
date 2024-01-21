@@ -95,7 +95,29 @@ async def stock_price(ctx, *tickers):
             await ctx.send(f"{ticker}: {price}")
         except Exception as e:
             await ctx.send(f"Error fetching price for {ticker}: {e}")
-    
+
+# Returns current list of stocks and their corresponding prices
+            
+@bot.command(name='showStocks')
+async def show_stocks(ctx):
+    """ Displays the current list of stocks in the watchlist with their corresponding prices """
+    if stock_list:
+        messages = []
+        for ticker in stock_list:
+            try:
+                stock_info = await get_stock_data(ticker)
+                if stock_info:
+                    price = stock_info['regularMarketPrice']
+                    messages.append(f"{ticker}: Current Price: {price}")
+                else:
+                    messages.append(f"{ticker}: Price information unavailable")
+            except Exception as e:
+                messages.append(f"{ticker}: Error fetching price - {e}")
+        # Join the messages and send
+        await ctx.send('\n'.join(messages))
+    else:
+        await ctx.send("The watchlist is currently empty.")
+  
 # Function to continuously give stock updates every 15 minutes in the form of a Discord chat msg
             
 async def stock_update_every_15_minutes():
