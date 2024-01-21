@@ -19,10 +19,11 @@ Easy Interaction: Users can interact with the bot using simple commands to add o
 !refreshRate <MINUTES>: Sets the refresh rate for how often the user receives stock updates.
 Installation and Setup
 
-### Clone the repository to your local machine.
+### Setup
 
 Install the required dependencies using pip install -r requirements.txt.
 Set up environment variables for your Discord token and Alpha Vantage API key.
+Enter your Discord Channel ID.
 Run the bot using python bot.py.
 
 ### Technologies Used
