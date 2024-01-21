@@ -37,7 +37,7 @@ async def on_ready():
         if guild.name == GUILD:
             break
     print(f'{bot.user} is connected to the following guild:\n{guild.name}(id: {guild.id})')
-    bot.loop.create_task(stock_update_every_30_minutes())
+    bot.loop.create_task(stock_update_every_15_minutes())
 
 # Function to get stock data 
     
