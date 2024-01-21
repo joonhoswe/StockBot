@@ -31,12 +31,32 @@ user_stocks = defaultdict(set)
 async def greet(ctx):
    await ctx.send("hello")
 
+# Startup
+   
 @bot.event
 async def on_ready():
     for guild in bot.guilds:
         if guild.name == GUILD:
             break
     print(f'{bot.user} is connected to the following guild:\n{guild.name}(id: {guild.id})')
+
+    hello_channel_id = 1133386948690579468  # Replace with your channel ID!
+    hello_channel = bot.get_channel(hello_channel_id)
+    
+    # Send "hello" message to the specified channel
+    if hello_channel:  # Check if the channel is found
+        await hello_channel.send("Hello, StockBot at your service :)\n\n"
+            "After adding stocks to your watchlist, you will receive an update every 15 minutes.\n\n"
+            "COMMANDS:\n"
+            "===================================================================================\n\n"
+            "!addStock (ticker): adds a stock to your watchlist. Ex( !addStock AAPL)\n"
+            "!removeStock (ticker): removes a stock to your watchlist. Ex( !removeStock AAPL )\n"
+            "!stockPrice (ticker): retrieves a current stocks price. Ex( !stockPrice AAPL )\n"
+            "!showStocks: prints your current watchlist's stocks and their prices ( !showStocks)")
+        
+    else:
+        print(f"Channel with ID {hello_channel_id} not found.")
+
     bot.loop.create_task(stock_update_every_15_minutes())
 
 # Function to get stock data 
