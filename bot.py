@@ -31,6 +31,8 @@ user_stocks = defaultdict(set)
 async def greet(ctx):
    await ctx.send("hello")
 
+# Startup
+   
 @bot.event
 async def on_ready():
     for guild in bot.guilds:
