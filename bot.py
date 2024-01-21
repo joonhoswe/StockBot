@@ -27,10 +27,6 @@ stock_list = []
 # Dictionary to hold user preferences
 user_stocks = defaultdict(set)
 
-@bot.command(name='greet')
-async def greet(ctx):
-   await ctx.send("hello")
-
 # Startup
    
 @bot.event
