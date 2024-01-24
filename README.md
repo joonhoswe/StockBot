@@ -14,8 +14,6 @@ Stock Watchlist: Users can add or remove stocks to their personal watchlist, all
 
 Real-Time Updates: The bot fetches the latest stock prices using the Alpha Vantage API, providing up-to-date market information.    
 
-User-Defined Refresh Rates: Users can set their preferred refresh rate, determining how often they receive stock updates.  
-
 Direct Messaging: Stock updates are sent directly to users, ensuring a clutter-free experience and personal data privacy.  
 
 Easy Interaction: Users can interact with the bot using simple commands to add or remove stocks from their watchlist or to set their refresh rate for updates.
@@ -39,9 +37,7 @@ Easy Interaction: Users can interact with the bot using simple commands to add o
 <img width="465" alt="Screenshot 2024-01-21 at 3 21 32 PM" src="https://github.com/joonhoswe/StockBot/assets/149014867/f0dbdc52-d491-41eb-8d7f-8d009182bf8d">
 
 
-### Installation and Setup
-
-Install the required dependencies using pip install -r requirements.txt.  
+### Installation and Setup 
 
 Set up environment variables for your Discord token and Alpha Vantage API key.  
 
