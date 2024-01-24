@@ -4,7 +4,7 @@
 
 This Discord bot is designed to provide real-time stock market updates directly within your Discord server.    
 
-Tailored for individual investors or stock market enthusiasts, the bot offers personalized stock tracking and regular market updates, ensuring users are always in the loop with the latest financial information.
+Tailored for gamers, individual investors or stock market enthusiasts, the bot offers personalized stock tracking and regular market updates, ensuring users are always in the loop with the latest financial information.
 
 <img width="728" alt="Screenshot 2024-01-21 at 3 18 51 PM" src="https://github.com/joonhoswe/StockBot/assets/149014867/d7e24bc5-2c4a-4ccd-96d9-09d70c6939d4">
 
