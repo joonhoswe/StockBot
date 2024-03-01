@@ -39,11 +39,15 @@ Easy Interaction: Users can interact with the bot using simple commands to add o
 
 ### Installation and Setup 
 
+Run python -m pip install -r requirements.txt
+
 Set up environment variables for your Discord token and Alpha Vantage API key.  
 
 Enter your Discord Channel ID.  
 
 Run the bot using python bot.py.
+
+Congrats! You're now ready to become a wall street bro.
 
 ### Technologies Used
 
